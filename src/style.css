@@ -1,3 +1,7 @@
+h1,
+h2 {
+  margin: 0;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -59,8 +63,9 @@ h1 {
   padding: 1em;
 }
 
-.read-the-docs {
-  color: var(--color-1);
+.info {
+  color: var(--color-9);
+  margin: 20px 0;
 }
 
 button {
@@ -106,10 +111,13 @@ button:focus-visible {
   --color-5: #fac76e;
   --color-6: #fad3c0;
   --color-7: #fff;
+  --color-8: #ffbdc8;
+  --color-9: #f00b0d;
+  --color-10: #ffe3e7;
 }
 
 body {
-  background-color: #fad3c0;
+  background-color: var(--color-8);
 }
 
 .palette {
@@ -153,6 +161,15 @@ body {
 .My-Color-Theme-7-hex {
   background-color: var(--color-7);
 }
+.My-Color-Theme-9-hex {
+  background-color: var(--color-8);
+}
+.My-Color-Theme-9-hex {
+  background-color: var(--color-9);
+}
+.My-Color-Theme-10-hex {
+  background-color: var(--color-10);
+}
 
 .title {
   color: var(--color-4);
@@ -175,7 +192,7 @@ body {
   font-weight: 500;
   font-family: inherit;
   width: 300px;
-  background-color: var(--color-3);
+  background-color: var(--color-4);
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

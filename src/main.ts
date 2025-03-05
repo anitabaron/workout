@@ -2,25 +2,33 @@ import "./style.css";
 import { setupCounter } from "./counter.ts";
 import { Clock } from "./clock.ts";
 import Stopwatch from "./stopwatch.ts";
+import { logo } from "./logo.ts";
 
 // Main app container
 const app = document.querySelector<HTMLDivElement>("#app")!;
 if (!app) throw new Error("App container not found");
 
+// Logo container
+const logoContainer = document.createElement("div");
+logoContainer.className = "logo-container";
+const logoGo = logo;
+logoContainer.appendChild(logoGo);
+
 // Create elements dynamically
 const title = document.createElement("h1");
 title.className = "title";
-title.textContent = "Go girl workout app!";
+// title.textContent = "Go girl workout app!";
 
 const description = document.createElement("h1");
-description.className = "read-the-docs";
+description.className = "info";
 description.textContent =
-  "Here will appear a workout adjustable plan with time counter - stay tuned";
+  "Workout app designed to help you stay on track with your goals - stay tuned";
 
 // Stopwatch container
 const stopwatchContainer = document.createElement("div");
 const stopwatchTitle = document.createElement("h2");
-stopwatchTitle.textContent = "Workout Timer built with Vite + TypeScript";
+stopwatchTitle.textContent =
+  "Workout planner and timer built with Vite + TypeScript";
 
 const stoperDisplay = document.createElement("div");
 stoperDisplay.id = "stoper-display";
@@ -40,6 +48,7 @@ resetButton.textContent = "Reset";
 
 // Append elements to stopwatch container
 stopwatchContainer.append(
+  logoContainer,
   stopwatchTitle,
   stoperDisplay,
   startButton,
@@ -63,6 +72,9 @@ paletteContainer.innerHTML = `
       <div class="box-color My-Color-Theme-5-hex"></div>
       <div class="box-color My-Color-Theme-6-hex"></div>
       <div class="box-color My-Color-Theme-7-hex"></div>
+      <div class="box-color My-Color-Theme-8-hex"></div>
+      <div class="box-color My-Color-Theme-9-hex"></div>
+      <div class="box-color My-Color-Theme-10-hex"></div>
     </div>`;
 
 // Counter container
