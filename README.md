@@ -1,6 +1,6 @@
 # Welcome to Go Girl Workout App! 🚀
 
-![Workout App](public/sneek.jpg)
+![Go Girl! Workout App](./public/sneek.JPG)
 
 A simple and effective tool to help you plan, track, and stay consistent with your workouts. Designed for both coaches and individual users, this app allows easy customization of workout routines, including exercise repetitions, sets, and time tracking.
 
